@@ -76,5 +76,18 @@ GET,/search?q=...,Semantic search
 * Production-ready logging
 * PATCH,/tasks/{id},Update task
 
+### Cheatsheet:
+| Action              | Command                                             | Notes                            |
+| ------------------- | --------------------------------------------------- | -------------------------------- |
+| ➕ Add Task          | `python -m src.main add "Task description"`         | Creates a new AI-parsed task     |
+| ➕ Add with Due Date | `python -m src.main add "Task" --due 2025-11-12`    | Adds custom due date             |
+| 📋 List All         | `python -m src.main list`                           | Show all tasks                   |
+| 📂 Filter           | `python -m src.main list --category Work`           | Filter by any field              |
+| ✏️ Update           | `python -m src.main update 1 --status Done`         | Update one or more fields        |
+| 🔍 Find (Semantic)  | `python -m src.main find --q "review presentation"` | Searches using vector embeddings |
+| 🗑️ Delete          | `python -m src.main delete 2`                       | Delete a specific task           |
+| 💣 Delete All       | `python -m src.main delete --all`                   | Clears DB + embeddings           |
+
+
 ### Video Walkthrough
 Link : 
