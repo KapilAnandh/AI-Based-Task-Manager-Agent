@@ -88,6 +88,3 @@ GET,/search?q=...,Semantic search
 | 🗑️ Delete          | `python -m src.main delete 2`                       | Delete a specific task           |
 | 💣 Delete All       | `python -m src.main delete --all`                   | Clears DB + embeddings           |
 
-
-### Video Walkthrough
-Link : https://youtu.be/i-QBoWzy-g8 
